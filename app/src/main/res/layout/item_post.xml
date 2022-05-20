@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_imageId"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/tv_likes"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/eren" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent=".05" />
+
+        <TextView
+            android:id="@+id/tv_displayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Eren Jaeger"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@id/iv_imageId" />
+
+        <TextView
+            android:id="@+id/tv_userHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="/@jaegermeister"
+            app:layout_constraintStart_toEndOf="@id/tv_displayName"
+            app:layout_constraintTop_toTopOf="@+id/iv_imageId" />
+
+        <TextView
+            android:id="@+id/tv_createdAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Jan 12"
+            app:layout_constraintStart_toEndOf="@id/tv_userHandle"
+            app:layout_constraintTop_toTopOf="@+id/iv_imageId" />
+
+        <TextView
+            android:id="@+id/tv_caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Qwertyuiop"
+            app:layout_constraintBottom_toTopOf="@+id/tv_likes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_displayName"
+            app:layout_constraintVertical_bias="0.44" />
+
+        <TextView
+            android:id="@+id/tv_likes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:text="1000 Likes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/iv_imageId" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent=".23
+" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent=".28
+" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
